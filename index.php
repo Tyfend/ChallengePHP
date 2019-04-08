@@ -114,15 +114,104 @@
 <?php
 	//CONDITIONS
 	//Exercice 1
-	
+	$age = 17;
+
+	if ($age >= 18) {
+		echo "Vous êtes majeur". '<br />';
+	}else{
+		echo "Vous êtes mineur". '<br />';
+	}
+
 	//Exercice 2
+	$isEasy = 'false';
+
+	/*if ($isEasy = false) {
+		echo "C'est difficile !". '<br />';
+	}else{
+		echo "C'est facile !!". '<br />';
+	}*/
+
+	/*switch ($isEasy) {
+		case 'false':
+			echo "C'est difficile !". '<br />';
+			break;
+		case 'true':
+			echo "C'est facile !!". '<br />';
+			break;
+		default:
+			echo "Ce n'est ni facile ni difficile ;)";
+			break;
+	}*/
+
+		//en condition binaire:
+		//(condition) ? true : false;
+	echo ($isEasy) ? 'C\'est facile !! <br />' : 'C\est difficile! <br />';
+
 
 	//Exercice 3
+	// gérer tous les cas!!!
+	$age = 18;
+	$genre = "homme";
+
+	 if ($genre == "homme" && $age >= 18) {
+	 	echo "Vous êtes un homme et vous êtes majeur <br />";
+	 }elseif ($genre == "homme" && $age < 18) {
+	 	echo "Vous êtes un homme et vous êtes mineur <br />";
+	 }elseif($genre == "femme" && $age >= 18) {
+	 	echo "Vous êtes une femme et vous êtes majeure <br />";
+	 }elseif ($genre == "homme" && $age < 18) {
+	 	echo "Vous êtes une femme et vous êtes mineure <br />";
+	 }else{
+	 	echo "merci de choisir entre \"homme\" ou \"femme\"";
+	 }
+	
 
 	//Exercice 4
+	$magnitude = 0;
+     switch($magnitude)
+     {
+           case 1:
+               echo 'Micro-séisme impossible à ressentir.';
+           break;
+           case 2:
+               echo 'Micro-séisme impossible à ressentir mais enregistrable par les sismomètres.';
+           break;
+           case 3:
+               echo 'Ne cause pas de dégats mais commence à pouvoir être légèrement ressenti.';
+           break;
+           case 4:
+               echo 'Séisme capable de faire bouger des objets mais ne causant généralement pas de dégats.';
+           break;
+           case 5:
+               echo 'Séisme capable d\'engendrer des dégats importants sur de vieux bâtiments ou bien des bâtiments présentants des défauts de construction. Peu de dégats sur des bâtiments modernes.';
+           break;
+           case 6:
+               echo 'Fort séisme capable d\'engendrer des destructions majeures sur une large distance (180 km) autour de l\'épicentre.';
+           break;
+           case 7:
+               echo 'Séisme capable de destructions majeures à modérées sur une très large zone en fonction de la distance.';
+           break;
+           case 8:
+               echo 'Séisme capable de destructions majeures sur une très large zone de plusieurs centaines de kilomètres.';
+           break;
+           case 9:
+               echo 'Séisme capable de tout détruire sur une très vaste zone.';
+           break;
+           default:
+               echo 'Aucun séisme ;)';
+           break;
+     } 
 
 	//Exercice 5
+     //echo ($maVariable != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
 
+     $maVariable = "Homme";
+
+     if ($maVariable == 'Homme') {
+	     echo "<br /> C'est une développeuse!!!";
+     }else{
+     	echo "<br />  C'est un développeur !!!";
+     }
 	//Exercice 6
 
 	//Exercice 7
