@@ -203,19 +203,34 @@
      } 
 
 	//Exercice 5
-     //echo ($maVariable != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
+    //echo ($maVariable != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
 
      $maVariable = "Homme";
 
-     if ($maVariable == 'Homme') {
+     if ($maVariable != 'Homme') {
 	     echo "<br /> C'est une développeuse!!!";
      }else{
      	echo "<br />  C'est un développeur !!!";
      }
 	//Exercice 6
+     if ($maVariable >= 18){
+     	echo "tu es majeur";
+     }else{
+     	echo "tu n'es pas majeur";
+     }
 
 	//Exercice 7
+     if ($maVariable == false) {
+     	echo "C\'est pas bon";
+     }else{
+     	echo "C\'est ok";
+     }
 
 	//Exercice 8
+     if ($maVariable) {
+     	echo "c\'est ok";
+     }else{
+     	echo "c\'est pas bon";
+     }
 ?>
 		
